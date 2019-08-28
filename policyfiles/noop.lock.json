@@ -1,5 +1,5 @@
 {
-  "revision_id": "4b573e58b2e3a424f61821560bf645ceb4bc6f742c5555c750ea41aae3221184",
+  "revision_id": "683dcf04439a7273a277cef23069edc02375dff759a53bcd914f44d7a7d2882e",
   "name": "noop",
   "run_list": [
     "recipe[fc_cookbook::noop]"
@@ -10,18 +10,18 @@
   "cookbook_locks": {
     "fc_cookbook": {
       "version": "0.1.0",
-      "identifier": "54f838b4e421e494c3311890381a4884e5653b41",
-      "dotted_decimal_identifier": "23916820480401892.41872912186095642.79735621499713",
+      "identifier": "5bf44444d368fc1e78d7acdc313da3d9aadf10d5",
+      "dotted_decimal_identifier": "25882796930328828.8577117014733117.180155269976277",
       "source": "../fc_cookbook",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": null,
-        "working_tree_clean": true,
-        "published": false,
+        "remote": "git@github.com:mattray/filecheck-profile.git",
+        "revision": "9d7d120b3146d2ce0c5a2272bbb417ec46b942f8",
+        "working_tree_clean": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {

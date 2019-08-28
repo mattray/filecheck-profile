@@ -1,0 +1,10 @@
+name: filecheck
+title: File Check
+maintainer: Matt Ray
+copyright: Matt Ray
+copyright_email: matt@chef.io
+license: Apache-2.0
+summary: Example attribute-driven control
+version: 0.1.0
+supports:
+  platform: os

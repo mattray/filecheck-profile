@@ -1,6 +1,9 @@
 ---
 driver:
   name: vagrant
+  synced_folders:
+      - ['test', '/test', 'create: true', owner: "root", group: "root"]
+      - ['profile', '/profile', 'create: true', owner: "root", group: "root"]
 
 provisioner:
   name: chef_zero
@@ -15,20 +18,32 @@ suites:
   - name: audit
     provisioner:
       policyfile: policyfiles/audit.rb
-    verifier:
-      inspec_tests:
-        - .
+    attributes:
+      audit:
+        reporter: json-file
+        json_file:
+          location: /test/audit-output.json
+        profiles:
+          filecheck:
+            path: /profile
+        attributes:
+          file: /tmp/audit
   - name: fc_cookbook
     provisioner:
       policyfile: policyfiles/fc_cookbook.rb
-    verifier:
-      inspec_tests:
-        - .
+    attributes:
+      audit:
+        reporter: json-file
+        json_file:
+          location: /test/fc-output.json
+        profiles:
+          filecheck:
+            path: /profile
   - name: noop
     provisioner:
       policyfile: policyfiles/noop.rb
     verifier:
       inspec_tests:
-        - .
+        - profile
       attributes:
-        file: /tmp/foo
+        file: /tmp/noop

@@ -1,0 +1,42 @@
+{
+  "revision_id": "b7a48f4c85dc3df1c119292c56f5f306bb08f1a723c526a3023b9d76f4ca6b64",
+  "name": "audit",
+  "run_list": [
+    "recipe[audit::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "audit": {
+      "version": "8.1.1",
+      "identifier": "416929d786ea2d371b9b7709de68a05c3dd86fb0",
+      "dotted_decimal_identifier": "18411501916711469.15511478250102376.176318035029936",
+      "cache_key": "audit-8.1.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/8.1.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/audit/versions/8.1.1/download",
+        "version": "8.1.1"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "audit",
+        "= 8.1.1"
+      ]
+    ],
+    "dependencies": {
+      "audit (8.1.1)": [
+
+      ]
+    }
+  }
+}
